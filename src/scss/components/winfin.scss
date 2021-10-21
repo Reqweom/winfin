@@ -1,0 +1,358 @@
+.winfin{
+    max-width: 1140px;
+    display: flex;
+}
+
+.winfin__calculator{
+    background-image: url("~/img/calculate-back.jpg");
+    width: 740px;
+    height: 700px;
+}
+
+.win__calc{
+    display: flex;
+}
+
+.winfin__calc-title{
+    color: #000;
+    font-size: 36px;
+    padding: 0 50px 20px;
+}
+
+.winfin__calc-left{
+    max-width: 370px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.variables-title{
+    color: #000;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.title{
+    width: 100%;
+}
+
+.mat{
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.mat__item{
+    color: #000;
+}
+
+.tree__type-title{
+    color: #000;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tree__type-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tree__type-item{
+    cursor: pointer;
+    color:#000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tree__type-item > .tree__type-input + .tree__image{
+    border: 1px solid transparent;
+    border-radius: 100%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tree__type-item > .tree__type-input:checked + .tree__image{
+    border: 1px solid #668b31;
+}
+
+.additional__elements{
+    color:orange;
+}
+
+.additional__elements-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.additional__elements-item{
+    color: rgba($color: #000, $alpha: .7);
+    padding-right: 5px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.additional__checked{
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba($color: #000, $alpha: .7);
+    &::before{
+        display: none;
+        content: "\2713";
+        color: orange;
+        position: absolute;
+        font-size: 25px;
+    }
+}
+
+.additional__elements-input:checked + .additional__checked{    
+    &::before{
+        display: block;
+    }
+}
+
+.winfin__order{
+    margin-top: 20px;
+    padding: 20px 80px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.winfin__calc-right{
+    width: 270px;
+    margin-left: 45px;
+}
+
+.type__construction-title{
+    color: #000;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.type__construction-images{
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.construction__image{
+    cursor: pointer;
+    z-index: 10;
+}
+
+.construction__item{
+    position: relative;
+}
+
+.picture--checked{
+    position: absolute;
+    right: -25%;
+    top: -25%;
+    display: none;
+}
+
+.type__construction-input:checked + .picture--checked{
+    display: block;
+}
+
+.window-size{
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.window-size__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-hight{
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+
+.size-width{
+    flex-direction: row-reverse;
+    padding: 10px 0px 5px;
+}
+
+.window-size__data-value{
+    width: 50px;
+    padding: 3px;
+}
+
+.window-size__data-desc{
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .8;
+    padding: 5px 7px;
+}
+
+.window-price{
+    background-color: #f1f0f0;
+    color:#000;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.window-price__title{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.window-price__value{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.window-price__desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7c7c7b;
+    line-height: 18px; 
+}
+
+.window-price__politic{
+    text-decoration: underline;
+    color: #7c7c7b;
+}
+
+.winfin__call{
+    width: 390px;
+    color:#fff;
+    background-color: #64892e;
+    padding: 45px 0px 50px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.winfin__call-title{
+    font-size: 24px;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    padding:0 40px;
+    margin: 0 0 25px 0; 
+    text-transform: uppercase;
+}
+
+.winfin__call__employee{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 5px 0 25px;
+}
+.winfin__call__employee-picture{
+    margin: 0 5px;
+}
+
+.winfin__call__employee-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.winfin__call__employee-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.winfin__call__employee-position{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.winfin__call__employee-desc{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.winfin__call-decoration{
+    position: absolute;
+    bottom: -8px;
+    left: -25px;
+}
+
+.winfin__call__input-data{
+    padding: 0 25px 0 50px;
+}
+
+.winfin__call-desc{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 500;
+    padding-right: 42%;
+    margin: 20px 0;
+    display: block;
+}
+
+.winfin__call__phone{
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    padding:15px 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.winfin__call__comment{
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    padding:15px 10px;
+    width: 100%;
+    height: 150px;
+    resize: none
+}
+
+.winfin__call__submit-button{
+    width: 100%;
+    background-color: orange;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border:1px solid orange;
+    transition: all .3s ease;
+    &:hover{
+        color:orange;
+        background-color: #fff;
+    }
+}

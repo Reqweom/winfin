@@ -7,6 +7,159 @@
     <title>Winfin</title>
 </head>
 <body>
-  
+    <div class="container">
+        <section class="winfin">
+
+            <form action="#" class="winfin__calculator">
+                <h2 class="winfin__calc-title">РАССЧИТАТЬ СТОИМОСТЬ</h2>
+                <div class="win__calc">
+                    <div class="winfin__calc-left">
+
+                        <label for="material" class="variables-title title">Выберите тип окна</label>
+                        <select name="material" id="material" class="type__material mat">
+                            <option class="mat__item" value="Деревянные" selected>Деревянные</option>
+                            <option class="mat__item" value="Пластиковые">Пластиковые</option>
+                            <option class="mat__item" value="Алюминевые">Алюминевые</option>
+                        </select>
+
+                        <label for="type" class="variables-title title">Выберите тип окна</label>
+                        <select name="type" id="type" class="type__window mat">
+                            <option class="mat__item" value="Однокамерный + Стекло" selected>Однокамерный + Стекло</option>
+                            <option class="mat__item" value="Двухкамерный">Двухкамерный</option>
+                            <option class="mat__item" value="Алюминевые">Алюминевые</option>
+                        </select>
+
+                        <p class="tree__type-title">Выберите тип дерева</p>
+                        <div class="tree__type-list">
+                            <label class="tree__type-item">
+                                <input name="tree" type="radio" class="tree__type-input visually-hidden">
+                                <img src="img/win-material-1.png" alt="Сосна" class="tree__image">
+                                <span>Сосна</span>
+                            </label>
+                            <label class="tree__type-item">
+                                <input name="tree" type="radio" class="tree__type-input visually-hidden">
+                                <img src="img/win-material-2.png" alt="Лиственница" class="tree__image">
+                                <span>Лиственница</span>
+                            </label>
+                            <label class="tree__type-item">
+                                <input name="tree" type="radio" class="tree__type-input visually-hidden">
+                                <img src="img/win-material-3.png" alt="Дуб" class="tree__image">
+                                <span>Дуб</span>
+                            </label>
+                            <label class="tree__type-item">
+                                <input name="tree" type="radio" class="tree__type-input visually-hidden">
+                                <img src="img/win-material-4.png" alt="Меранти" class="tree__image">
+                                <span>Меранти</span> 
+                            </label>
+                        </div>
+                        
+                        <p class="additional__elements">Дополнительные элементы</p>
+                        <div class="additional__elements-list">
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив" checked>
+                                <span class="additional__checked"></span>
+                                Отлив
+                            </label>
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив">
+                                <span class="additional__checked"></span>
+                                Откидной замок                        
+                            </label>
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив">
+                                <span class="additional__checked"></span>
+                                Детский механизм
+                            </label>
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив">
+                                <span class="additional__checked"></span>
+                                Подоконник / Порог
+                            </label>
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив">
+                                <span class="additional__checked"></span>
+                                Энергосберегающий
+                            </label>
+                            <label class="additional__elements-item">
+                                <input name="additional__elem" type="checkbox" class="additional__elements-input visually-hidden" value="Отлив">
+                                <span class="additional__checked"></span>
+                                Монтаж
+                            </label>
+                        </div>
+                        <button type="submit" class="winfin__order">ОФОРМИТЬ ЗАКАЗ</button>
+                    </div>
+                    <div class="winfin__calc-right">
+                        <p class="type__construction-title title">Тип конструкции</p>
+                        <div class="type__construction-images">
+                            <label class="construction__item">
+                                <input name="costruction" type="radio" class="type__construction-input visually-hidden" checked>
+                                <span class="picture--checked">
+                                    <img src="img/cheked.png" alt="win-checked">
+                                </span>
+                                <img src="img/win-var-1.png" alt="" class="construction__image">
+                            </label>
+                            <label class="construction__item">
+                                <input name="costruction" type="radio" class="type__construction-input visually-hidden">
+                                <span class="picture--checked">
+                                    <img src="img/cheked.png" alt="win-checked">
+                                </span>
+                                <img src="img/win-var-2.png" alt="" class="construction__image">  
+                            </label> 
+                            <label class="construction__item">
+                                <input name="costruction" type="radio" class="type__construction-input visually-hidden">
+                                <span class="picture--checked">
+                                    <img src="img/cheked.png" alt="win-checked">
+                                </span>  
+                                <img src="img/win-var-3.png" alt="" class="construction__image"> 
+                            </label>
+                            <label class="construction__item">
+                                <input name="costruction" type="radio" class="type__construction-input visually-hidden">
+                                <span class="picture--checked">
+                                    <img src="img/cheked.png" alt="win-checked">
+                                </span>
+                                <img src="img/win-var-4.png" alt="" class="construction__image">
+                            </label> 
+                        </div>
+                        <div class="window-size">
+                            <img class="window-size__picture" src="img/window-size.png" alt="Окно для замера">
+                            <div class="window-size__data size-hight">
+                              <input type="text" max="999"name="hight" id="hight" class="window-size__data-value">
+                              <label for="hight" class="window-size__data-desc">Высота</label>
+                            </div>
+                            <div class="window-size__data size-width">
+                              <input type="text" max="999" name="width" id="width" class="window-size__data-value">
+                              <label for="width" class="window-size__data-desc">Ширина</label>
+                            </div>
+                          </div>
+                          <div class="window-price">
+                            <h3 class="window-price__title">Стоимость окна</h3>
+                            <span class="window-price__value">13 632 р.</span>
+                            <p class="window-price__desc">Обращаем Ваше внимание, что данный расчет является приблизительным. Наш менеджер сообщит Вам точную стоимость после уточнения информации. Нажимая кнопку “Оформить заказ”, Вы принимаете<a href="#" class="window-price__politic">политику конфиденциальности</a> </p>
+                          </div>
+                        </div>
+            </form>
+
+            <form action="#" class="winfin__call">
+                <h3 class="winfin__call-title">вызвать специалиста на замер</h3>
+                <div class="winfin__call__employee">
+                  <div class="winfin__call__employee-picture">
+                    <img src="img/employee.png" alt="сотрудник компании">
+                  </div>
+                  <div class="winfin__call__employee-content">
+                    <p class="winfin__call__employee-name">Олег Иванов</p>
+                    <p class="winfin__call__employee-position">менеджер компании Winfin</p>
+                    <span class="winfin__call__employee-desc">Опыт работы в компании Winfin более 10 лет</span>
+                  </div>
+                </div>  
+                <div class="winfin__call__input-data">
+                  <p class="winfin__call-desc">возможен выезд в день обращения</p> 
+                  <input name="phone" class="winfin__call__phone" type="tel" placeholder="Тел.">
+                  <textarea type="text" name="comment" class="winfin__call__comment" placeholder="Комментарий"></textarea>
+                  <button type="submit" class="winfin__call__submit-button">Вызвать на замер</button>
+                </div>
+                <img class="winfin__call-decoration" src="img/rulet.png" alt="рулетка">     
+              </form>
+        </section>
+    </div>
 </body>
 </html>
